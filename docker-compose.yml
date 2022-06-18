@@ -58,8 +58,8 @@ services:
       POSTGRES_USER: "gsivash"
       PGDATA: "/var/lib/postgresql/data/pgdata"
     volumes:
-      - D:\Users\Дмитрий\PycharmProjects\HadoopClusterDocker\postgres-db\data:/docker-entrypoint-initdb.d
-      - D:\Users\Дмитрий\PycharmProjects\HadoopClusterDocker\postgres-db\pgdata:/var/lib/postgresql/data/pgdata
+      - .\postgres-db\data:/docker-entrypoint-initdb.d
+      - .\postgres-db\pgdata:/var/lib/postgresql/data/pgdata
     ports:
       - "5432:5432"
     networks:
